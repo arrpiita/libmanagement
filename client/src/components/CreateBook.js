@@ -24,7 +24,7 @@ const CreateBook = (props) => {
     e.preventDefault();
 
     axios
-      .post('https://5000-mearrpita-libmanagement-fzlwsiju0iz.ws-us93.gitpod.io/api/books', book)
+      .post('/api/books', book)
       .then((res) => {
         setBook({
           title: '',
