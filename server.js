@@ -32,7 +32,8 @@ app.get("*", function (_, res) {
 
 
 // STARTING SERVER
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
+const port = 5000;
 app.listen(port, () => console.log(`Express server running on port ${port}`));
 
 
