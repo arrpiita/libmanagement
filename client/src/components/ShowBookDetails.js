@@ -11,7 +11,7 @@ function ShowBookDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`https://5000-arrpiita-librarymgmnt-d69etp00jdv.ws-us92.gitpod.io/api/books/${id}`)
+      .get(`https://5000-mearrpita-libmanagement-fzlwsiju0iz.ws-us93.gitpod.io/api/books/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -23,7 +23,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`https://5000-arrpiita-librarymgmnt-d69etp00jdv.ws-us92.gitpod.io/api/books/${id}`)
+      .delete(`https://5000-mearrpita-libmanagement-fzlwsiju0iz.ws-us93.gitpod.io/api/books/${id}`)
       .then((res) => {
         navigate('/');
       })
