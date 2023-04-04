@@ -2,8 +2,10 @@ const mongoose = require("mongoose")
 
 const connectDB = async () => {
   try {
+    const db_url = "mongodb+srv://arpita:April5th@cluster0.zdtiwoa.mongodb.net/books?retryWrites=true&w=majority"
     mongoose.set("strictQuery", true)
-    await mongoose.connect(process.env.ATLAS_URL, {
+    // console.log(process.env.ATLAS_URL)
+    await mongoose.connect(db_url, {
       useNewUrlParser: true,
     })
     .then(() => {
